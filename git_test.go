@@ -24,6 +24,7 @@ func TestMatchTicketNumber(t *testing.T) {
 		{"it should match with 4 digits", "TICKET-1234", true},
 		{"it should match with 5 digits", "TICKET-12345", true},
 		{"it should match with 6 digits", "TICKET-123456", true},
+		{"it should match with different format", "feat(TICKET-123)", true},
 	}
 
 	for _, tc := range cases {
